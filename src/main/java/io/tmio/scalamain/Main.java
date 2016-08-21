@@ -8,7 +8,7 @@ public class Main {
   public static void main(String[] args) {
     try {
         ClassLoader loader = Thread.currentThread().getContextClassLoader();
-        Class clazz = loader.loadClass(args[0]);
+        Class clazz = loader.loadClass(args[0] + "$");
         Field singleton = clazz.getField("MODULE$");
         Object instance = singleton.get(null);
         Method main = clazz.getMethod(args[1], String[].class);
