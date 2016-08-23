@@ -3,6 +3,8 @@ require 'buildr/gpg'
 require 'buildr/custom_pom'
 
 repositories.release_to[:url] = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/'
+repositories.release_to[:username] = ENV['USERNAME']
+repositories.release_to[:password] = ENV['PASSWORD']
 
 VERSION_NUMBER='1.0.0-SNAPSHOT'
 
