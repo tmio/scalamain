@@ -2,6 +2,8 @@ require 'buildr/scala'
 require 'buildr/gpg'
 require 'buildr/custom_pom'
 
+repositories.release_to[:url] = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/'
+
 VERSION_NUMBER='1.0.0-SNAPSHOT'
 
 define('scalamain', :group => 'io.tmio', :version => VERSION_NUMBER) do
