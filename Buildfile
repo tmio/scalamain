@@ -6,7 +6,7 @@ repositories.release_to[:url] = 'https://oss.sonatype.org/service/local/staging/
 repositories.release_to[:username] = ENV['USERNAME']
 repositories.release_to[:password] = ENV['PASSWORD']
 
-VERSION_NUMBER="1.0.0"
+VERSION_NUMBER="1.0.1-SNAPSHOT"
 
 define('scalamain', :group => 'io.tmio', :version => VERSION_NUMBER) do
   package(:jar).with :manifest=>manifest.merge('Main-Class'=>'io.tmio.scalamain.Main')
