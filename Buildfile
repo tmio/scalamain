@@ -2,7 +2,7 @@ require 'buildr/scala'
 require 'buildr/gpg'
 require 'buildr/custom_pom'
 
-VERSION_NUMBER='1.0.0.001-SNAPSHOT'
+VERSION_NUMBER='1.0.0-SNAPSHOT'
 
 define('scalamain', :group => 'io.tmio', :version => VERSION_NUMBER) do
   package(:jar).with :manifest=>manifest.merge('Main-Class'=>'io.tmio.scalamain.Main')
