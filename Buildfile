@@ -2,6 +2,8 @@ require 'buildr/scala'
 require 'buildr/gpg'
 require 'buildr/custom_pom'
 
+repositories.remote << "http://repo1.maven.org/maven2"
+
 repositories.release_to[:url] = 'https://oss.sonatype.org/service/local/staging/deploy/maven2/'
 repositories.release_to[:username] = ENV['USERNAME']
 repositories.release_to[:password] = ENV['PASSWORD']
