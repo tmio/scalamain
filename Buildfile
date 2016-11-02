@@ -9,6 +9,8 @@ repositories.release_to[:password] = ENV['PASSWORD']
 VERSION_NUMBER="1.0.1-SNAPSHOT"
 
 define('scalamain', :group => 'io.tmio', :version => VERSION_NUMBER) do
+  compile.options.source = '1.7'
+  compile.options.target = '1.7'
   package(:jar).with :manifest=>manifest.merge('Main-Class'=>'io.tmio.scalamain.Main')
   package(:sources)
   package(:javadoc)
