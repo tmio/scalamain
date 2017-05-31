@@ -5,6 +5,12 @@ import java.lang.reflect.Method;
 
 public class Main {
   
+  /**
+   * Runs a scala object method.
+   * @param args the arguments for the main class - the scala object qualified name, 
+   * the method name, and all the arguments the method takes.
+   * 
+   */
   public static void main(String[] args) {
     try {
         ClassLoader loader = Thread.currentThread().getContextClassLoader();

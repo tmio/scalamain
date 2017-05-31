@@ -1,20 +1,42 @@
 # ScalaMain
 
-TODO
+[![Build Status](https://travis-ci.org/tmio/scalamain.svg?branch=master)](https://travis-ci.org/tmio/scalamain)
+
+Available on Maven Central:
+
+For Buildr:
+~~~~
+'io.tmio:scalamain:jar:1.0.3'
+~~~~
+
+For Maven:
+~~~~
+<dependency>
+    <groupId>io.tmio</groupId>
+    <artifactId>scalamain</artifactId>
+    <version>1.0.3</version>
+</dependency>
+~~~~
 
 ## Usage
 
-TODO
+Scalamain is a simple library to help call a scala object method.
+Usually this can be done by calling scala com.biz.MyObject.
+However in some cases we're stuck with Java.
 
 # Contribute
 
+Any contribution is welcome.
+
 ## Develop
 
-TODO
+Clone this repository and make changes to the code.
+Open a pull request against this repository.
+We will make sure that Travis build passes before merging.
 
 ## Get in touch
 
-TODO
+You can get in touch by filing issues on this repository.
 
 # License
 
